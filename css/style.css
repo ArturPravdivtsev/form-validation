@@ -1,0 +1,133 @@
+body {
+    background-color: #2196F3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form h2 {
+    color: white;
+    font-size: 36px;
+    margin-left: 35px;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 65px 0px 65px 65px;
+}
+
+form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin: 0px 0px 12px 0px;
+}
+
+form input {
+    display: block;
+    border: none;
+    background-color: #f5f5f5;
+    height: 50px;
+    padding: 0px 0px 0px 20px;
+    width: 94%;
+}
+
+form textarea {
+    border: none;
+    background-color: #f5f5f5;
+    height: 100px;
+    padding: 0px 0px 0px 20px;
+    width: 94%;
+}
+
+form .name {
+    display: inline-block;
+    width: 45%;
+    margin-right: 25px;
+}
+
+form .last-name {
+    display: inline-block;
+    width: 45%;
+}
+
+form .email-label,
+form .phone-label,
+form .about-label {
+    margin-top: 50px;
+}
+
+.do {
+    margin-bottom: 235px;
+}
+
+
+/* The container */
+
+.container {
+    display: inline-block;
+    position: relative;
+    width: 16%;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: #eee;
+    display: inline-block;
+    color: #2196f3;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #51c9ef;
+    color: #c6fbff;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}

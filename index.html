@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="form">
+        <h2>Форма с прогресс баром</h2>
+        <form id="form" action="" method="post" name="form">
+            <label for="name" class="name-label">Как вас зовут*</label>
+            <input type="text" class="name" name="name" id="name" placeholder="Имя" maxlength="50" pattern="^[a-zA-Z\s]+$">
+            <input type="text" class="last-name" name="last-name" id="last-name" placeholder="Фамилия" maxlength="50" pattern="^[a-zA-Z\s]+$">
+            <label for="email" class="email-label">Электронная почта</label>
+            <input type="email" class="email" name="email" id="email" placeholder="your@email.ru">
+            <label for="phone" class="phone-label">Телефон</label>
+            <input type="tel" class="phone" name="phone" id="phone">
+            <label for="about" class="about-label">О себе</label>
+            <textarea name="about" class="about" id="about" cols="30" rows="10" minlength="3" maxlength="500"></textarea>
+            <p>Чем вы собираетесь заниматься на нашем сайте?</p>
+            <div class="do">
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark">Разработка сайта</span>
+                </label>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark">Поисковая оптимизация</span>
+                </label>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark">Разработка приложения</span>
+                </label>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark">Контексная реклама</span>
+                </label>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark">Маркетинг, SMM, PR</span>
+                </label>
+            </div>
+            <p style="border-bottom: 2px solid #f4f4f4; margin-left: -64px;"></p>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>
