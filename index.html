@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Validation Form</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -14,10 +15,10 @@
     <div class="progress"></div>
     <div class="form">
         <h2>Форма с прогресс баром</h2>
-        <form id="form" action="" method="post" name="form">
+        <form id="form" method="post" name="form">
             <label for="name" class="name-label">Как вас зовут*</label>
-            <input type="text" class="name" name="name" id="name" placeholder="Имя" maxlength="50" pattern="^[a-zA-Z\s]+$">
-            <input type="text" class="last-name" name="last-name" id="last-name" placeholder="Фамилия" maxlength="50" pattern="^[a-zA-Z\s]+$">
+            <input type="text" class="name" name="name" id="name" placeholder="Имя" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
+            <input type="text" class="last-name" name="last-name" id="last-name" placeholder="Фамилия" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
             <label for="email" class="email-label">Электронная почта</label>
             <input type="email" class="email" name="email" id="email" placeholder="your@email.ru">
             <label for="phone" class="phone-label">Телефон</label>
@@ -48,9 +49,10 @@
                 </label>
             </div>
             <p style="border-bottom: 2px solid #f4f4f4; margin-left: -64px;"></p>
-            <button type="submit">Отправить</button>
+            <button id="submit" type="submit">Отправить</button>
         </form>
     </div>
+    <div id="result_form"></div>
 </body>
 
 </html>
