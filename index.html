@@ -20,7 +20,7 @@
             <input type="text" class="name" name="NAME" id="name" placeholder="Имя" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
             <input type="text" class="last-name" name="LAST_NAME" id="last-name" placeholder="Фамилия" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
             <label for="email" class="email-label">Электронная почта</label>
-            <input type="email" class="email" name="EMAIL" id="email" placeholder="your@email.ru" pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i">
+            <input type="email" class="email" name="EMAIL" id="email" placeholder="your@email.ru">
             <label for="phone" class="phone-label">Телефон</label>
             <input type="tel" class="phone" name="PHONE" id="phone" pattern="/^\d[\d\(\)\ -]{4,14}\d$/">
             <label for="about" class="about-label">О себе</label>
@@ -28,23 +28,23 @@
             <p>Чем вы собираетесь заниматься на нашем сайте?</p>
             <div class="do">
                 <label class="container">
-                    <input type="checkbox" name="checkbox1" id="checkbox1">
+                    <input class="checkbox" type="checkbox" name="checkbox1" id="checkbox1">
                     <span class="checkmark">Разработка сайта</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    <input class="checkbox" type="checkbox" name="checkbox2" id="checkbox2">
                     <span class="checkmark">Поисковая оптимизация</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" name="checkbox3" id="checkbox3">
+                    <input class="checkbox" type="checkbox" name="checkbox3" id="checkbox3">
                     <span class="checkmark">Разработка приложения</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" name="checkbox4" id="checkbox4">
+                    <input class="checkbox" type="checkbox" name="checkbox4" id="checkbox4">
                     <span class="checkmark">Контексная реклама</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox" name="checkbox5" id="checkbox5">
+                    <input class="checkbox" type="checkbox" name="checkbox5" id="checkbox5">
                     <span class="checkmark">Маркетинг, SMM, PR</span>
                 </label>
             </div>
@@ -54,4 +54,5 @@
         </form>
     </div>
 </body>
+
 </html>
