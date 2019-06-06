@@ -19,15 +19,26 @@ $(document).ready(function() {
         console.log(name, lastname, email, phone, about);
         json = $.parseJSON('[{"required": true, "fields": {"NAME": false}}, {"required": false, "fields": {"LAST_NAME": true}}, {"required": true, "fields": {"EMAIL": false, "PHONE": false}}, {"required": false, "fields": {"TYPE": false}}, {"required": false, "fields": {"TEXT": false}}]');
         if (json[0].fields) {
-            if (name == "undefined") { $('#name').css({ 'border': '1px solid red' }) }
+            if (name == "") { $('#name').css({ 'border': '1px solid red' }) }
         }
         if (json[1].fields) {
-            console.log(1);
-            console.log(lastname);
             if (lastname == "") {
-                console.log(2);
-                console.log(lastname);
                 $('#last-name').css({ 'border': '1px solid red' })
+            }
+        }
+        if (json[2].fields) {
+            if (email == "") {
+                $('#email').css({ 'border': '1px solid red' })
+            }
+        }
+        if (json[3].fields) {
+            if (phone == "") {
+                $('#phone').css({ 'border': '1px solid red' })
+            }
+        }
+        if (json[4].fields) {
+            if (about == "") {
+                $('#about').css({ 'border': '1px solid red' })
             }
         }
         $.ajax({
