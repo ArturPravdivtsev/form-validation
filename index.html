@@ -17,42 +17,41 @@
         <h2>Форма с прогресс баром</h2>
         <form id="form" method="post" name="form">
             <label for="name" class="name-label">Как вас зовут*</label>
-            <input type="text" class="name" name="name" id="name" placeholder="Имя" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
-            <input type="text" class="last-name" name="last-name" id="last-name" placeholder="Фамилия" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
+            <input type="text" class="name" name="NAME" id="name" placeholder="Имя" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
+            <input type="text" class="last-name" name="LAST_NAME" id="last-name" placeholder="Фамилия" maxlength="50" pattern="^[A-Za-zА-Яа-я\s]+$">
             <label for="email" class="email-label">Электронная почта</label>
-            <input type="email" class="email" name="email" id="email" placeholder="your@email.ru" pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i">
+            <input type="email" class="email" name="EMAIL" id="email" placeholder="your@email.ru" pattern="/^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i">
             <label for="phone" class="phone-label">Телефон</label>
-            <input type="tel" class="phone" name="phone" id="phone" pattern="/^\d[\d\(\)\ -]{4,14}\d$/">
+            <input type="tel" class="phone" name="PHONE" id="phone" pattern="/^\d[\d\(\)\ -]{4,14}\d$/">
             <label for="about" class="about-label">О себе</label>
-            <textarea name="about" class="about" id="about" cols="30" rows="10" minlength="3" maxlength="500"></textarea>
+            <textarea name="TEXT" class="about" id="about" cols="30" rows="10" minlength="3" maxlength="500"></textarea>
             <p>Чем вы собираетесь заниматься на нашем сайте?</p>
             <div class="do">
                 <label class="container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox1">
                     <span class="checkmark">Разработка сайта</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
                     <span class="checkmark">Поисковая оптимизация</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="checkbox3" id="checkbox3">
                     <span class="checkmark">Разработка приложения</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="checkbox4" id="checkbox4">
                     <span class="checkmark">Контексная реклама</span>
                 </label>
                 <label class="container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="checkbox5" id="checkbox5">
                     <span class="checkmark">Маркетинг, SMM, PR</span>
                 </label>
             </div>
             <p style="border-bottom: 2px solid #f4f4f4; margin-left: -64px;"></p>
             <button id="submit" type="submit">Отправить</button>
+            <div id="result_form"></div>
         </form>
     </div>
-    <div id="result_form"></div>
 </body>
-
 </html>
