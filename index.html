@@ -14,8 +14,9 @@
 <body>
     <div class="progress">
         <p>Форма заполнена на</p>
-        <div class="progressbar">
-            <span style="width: 30%"></span>
+        <p class="progress-message" id="progress-message"></p>
+        <div class="progress-wrap">
+            <progress max="100" value="0" id="progress"></progress>
         </div>
     </div>
     <div class="form">
@@ -27,7 +28,7 @@
             <label for="email" class="email-label">Электронная почта</label>
             <input type="email" class="email" name="EMAIL" id="email" placeholder="your@email.ru">
             <label for="phone" class="phone-label">Телефон</label>
-            <input type="tel" class="phone" name="PHONE" id="phone" pattern="/^\d[\d\(\)\ -]{4,14}\d$/">
+            <input type="tel" class="phone" name="PHONE" id="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
             <label for="about" class="about-label">О себе</label>
             <textarea name="TEXT" class="about" id="about" cols="30" rows="10" minlength="3" maxlength="500"></textarea>
             <p>Чем вы собираетесь заниматься на нашем сайте?</p>
